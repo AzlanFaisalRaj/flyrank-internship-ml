@@ -1,0 +1,23 @@
+{
+  "model": "logistic_regression_grouped_split",
+  "split": "client_grouped (GroupShuffleSplit, test_size=0.25, seed=42)",
+  "base_rate": 0.542,
+  "precision_at_10": 0.8,
+  "precision_at_20": 0.7,
+  "roc_auc": 0.575,
+  "n_test_rows": 7115,
+  "n_clients_total": 32,
+  "action_mix": {
+    "monitor": 5522,
+    "refresh_and_review_ctr": 1369,
+    "refresh": 224
+  },
+  "top_reason_codes": {
+    "no_flag": 1786,
+    "model_decline_risk": 1255,
+    "model_decline_risk,visible_traffic,ctr_below_expected": 810,
+    "visible_traffic": 774,
+    "model_decline_risk,visible_traffic": 702,
+    "visible_traffic,ctr_below_expected": 570
+  }
+}
