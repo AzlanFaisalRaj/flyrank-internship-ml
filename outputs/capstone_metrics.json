@@ -1,0 +1,29 @@
+{
+  "model": "logistic_regression_grouped_split",
+  "split": "client_grouped (GroupShuffleSplit, test_size=0.25, seed=42)",
+  "base_rate": 0.517,
+  "results_vs_baseline": {
+    "baseline_rule": {
+      "p@10": 0.3,
+      "p@20": 0.3,
+      "roc_auc": 0.489
+    },
+    "logistic_regression": {
+      "p@10": 0.8,
+      "p@20": 0.7,
+      "roc_auc": 0.575
+    },
+    "random_forest": {
+      "p@10": 0.5,
+      "p@20": 0.5,
+      "roc_auc": 0.597
+    }
+  },
+  "n_test_rows": 7115,
+  "n_clients_total": 32,
+  "action_mix": {
+    "monitor": 5522,
+    "refresh_and_review_ctr": 1369,
+    "refresh": 224
+  }
+}
